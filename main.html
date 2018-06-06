@@ -15,14 +15,42 @@
 <div id="flex-container">
 	<div class="vertical-menu flex-item">
 	  <a href="main.html" class="active">Home</a>
-	  <a href="video1.html">Best of!</a>
-	  <a href="video2.html">Better of!</a>
-	  <a href="video3.html">Not a Reptile!</a>
-	  <a href="video4.html">Machine Washable!</a>
+	  <a href="#" onclick="
+		document.getElementById('1').style = 'display:block';
+		document.getElementById('2').style = 'display:none';
+		document.getElementById('3').style = 'display:none';
+		document.getElementById('4').style = 'display:none';">Best of!</a>
+	  <a href="#" onclick="
+		document.getElementById('2').style = 'display:block';
+		document.getElementById('1').style = 'display:none';
+		document.getElementById('3').style = 'display:none';
+		document.getElementById('4').style = 'display:none';">Better of!</a>
+	  <a href="#" onclick="
+		document.getElementById('3').style = 'display:block';
+		document.getElementById('1').style = 'display:none';
+		document.getElementById('2').style = 'display:none';
+		document.getElementById('4').style = 'display:none';">Not a Reptile!</a>
+	  <a href="#" onclick="
+		document.getElementById('4').style = 'display:block';
+		document.getElementById('1').style = 'display:none';
+		document.getElementById('3').style = 'display:none';
+		document.getElementById('2').style = 'display:none';">Machine Washable!</a>
 	</div>
 	<div class="flex-item">
-	<img src="alex-jones.jpg" alt="Alex Jones with an AK-47" width="560px">
+		<div id="1" style='display:none;'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ntWieh7YIgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div id="2" style='display:none;'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/kgUDbvKYbWk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div id="3" style='display:none;'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/r_5VtoysNFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div id="4" style='display:none;'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/5d1F0mJ8QPs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
 	</div>
+
 </div>
 </body>
 </html>
